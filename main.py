@@ -5,6 +5,10 @@ import random  # Importing the random library to generate random numbers
 pygame.init()
 clock = pygame.time.Clock()  # Create a clock to manage frame rate
 
+# Add music to the game
+pygame.mixer.music.load("assets/music.mp3")
+pygame.mixer.music.play(-1) # Loop the music
+
 # Set the screen size for the game
 screen_width = 800
 screen_height = 600
